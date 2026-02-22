@@ -1,0 +1,21 @@
+{
+  "name": "elemental-duel",
+  "version": "1.0.0",
+  "description": "ElementalDuel (Base) - 1v1 game contract with commit-reveal and reward hook",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "clean": "hardhat clean",
+    "deploy:sepolia": "hardhat run scripts/deploy-mocks-and-game.js --network baseSepolia",
+    "deploy:base": "hardhat run scripts/deploy-mocks-and-game.js --network base"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.10"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
